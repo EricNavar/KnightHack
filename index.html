@@ -1,17 +1,759 @@
-<!doctype html>
+<!doctype html>a
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Eric Navar's personal website">
+    <link rel="apple-touch-icon" href="logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Eric Navar</title>
+  <style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
 
-</head>
+::selection {
+  background: rgba(70, 181, 209, .8);
+}
 
+html {
+  scrollbar-width: none;
+}</style><style data-jss="" data-meta="MuiSvgIcon">
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  -moz-user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #151965;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #46b5d1;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+</style><style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-moz-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-moz-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style><style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  -moz-user-select: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+</style><style data-jss="" data-meta="MuiIconButton">
+.MuiIconButton-root {
+  flex: 0 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 12px;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiIconButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: transparent;
+}
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-edgeStart {
+  margin-left: -12px;
+}
+.MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+  margin-left: -3px;
+}
+.MuiIconButton-edgeEnd {
+  margin-right: -12px;
+}
+.MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+  margin-right: -3px;
+}
+.MuiIconButton-colorInherit {
+  color: inherit;
+}
+.MuiIconButton-colorPrimary {
+  color: #151965;
+}
+.MuiIconButton-colorPrimary:hover {
+  background-color: rgba(21, 25, 101, 0.04);
+}
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-colorSecondary {
+  color: #46b5d1;
+}
+.MuiIconButton-colorSecondary:hover {
+  background-color: rgba(70, 181, 209, 0.04);
+}
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-sizeSmall {
+  padding: 3px;
+  font-size: 1.125rem;
+}
+.MuiIconButton-label {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+</style><style data-jss="" data-meta="MuiGridList">
+.MuiGridList-root {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  list-style: none;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+</style><style data-jss="" data-meta="MuiGridListTile">
+.MuiGridListTile-root {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.MuiGridListTile-tile {
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.MuiGridListTile-imgFullHeight {
+  left: 50%;
+  height: 100%;
+  position: relative;
+  transform: translateX(-50%);
+}
+.MuiGridListTile-imgFullWidth {
+  top: 50%;
+  width: 100%;
+  position: relative;
+  transform: translateY(-50%);
+}
+</style><style data-jss="" data-meta="MuiGridListTileBar">
+.MuiGridListTileBar-root {
+  left: 0;
+  right: 0;
+  height: 48px;
+  display: flex;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.MuiGridListTileBar-titlePositionBottom {
+  bottom: 0;
+}
+.MuiGridListTileBar-titlePositionTop {
+  top: 0;
+}
+.MuiGridListTileBar-rootSubtitle {
+  height: 68px;
+}
+.MuiGridListTileBar-titleWrap {
+  color: #fff;
+  overflow: hidden;
+  flex-grow: 1;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.MuiGridListTileBar-titleWrapActionPosLeft {
+  margin-left: 0;
+}
+.MuiGridListTileBar-titleWrapActionPosRight {
+  margin-right: 0;
+}
+.MuiGridListTileBar-title {
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiGridListTileBar-subtitle {
+  overflow: hidden;
+  font-size: 0.75rem;
+  line-height: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiGridListTileBar-actionIconActionPosLeft {
+  order: -1;
+}
+</style><style data-jss="" data-meta="MuiListSubheader">
+.MuiListSubheader-root {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 48px;
+}
+.MuiListSubheader-colorPrimary {
+  color: #151965;
+}
+.MuiListSubheader-colorInherit {
+  color: inherit;
+}
+.MuiListSubheader-gutters {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.MuiListSubheader-inset {
+  padding-left: 72px;
+}
+.MuiListSubheader-sticky {
+  top: 0;
+  z-index: 1;
+  position: sticky;
+  background-color: inherit;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.makeStyles-root-2 {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fff;
+}
+.makeStyles-gridList-3 {
+  width: 500px;
+  height: 450px;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  ::selection {
+    background: rgba(70, 181, 209, .8);
+  }
+  
+  html {
+    scrollbar-width: none;
+  }
+
+  
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    -moz-user-select: none;
+  }
+  .MuiSvgIcon-colorPrimary {
+    color: #151965;
+  }
+  .MuiSvgIcon-colorSecondary {
+    color: #46b5d1;
+  }
+  .MuiSvgIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiSvgIcon-colorError {
+    color: #f44336;
+  }
+  .MuiSvgIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiSvgIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+  .MuiSvgIcon-fontSizeSmall {
+    font-size: 1.25rem;
+  }
+  .MuiSvgIcon-fontSizeLarge {
+    font-size: 2.1875rem;
+  }
+  
+  
+.MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    -moz-user-select: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiButtonBase-root::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiButtonBase-root.Mui-disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+  @media print {
+    .MuiButtonBase-root {
+      color-adjust: exact;
+    }
+  }
+  
+  
+.MuiTouchRipple-root {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+  .MuiTouchRipple-ripple {
+    opacity: 0;
+    position: absolute;
+  }
+  .MuiTouchRipple-rippleVisible {
+    opacity: 0.3;
+    animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1);
+  }
+  .MuiTouchRipple-ripplePulsate {
+    animation-duration: 200ms;
+  }
+  .MuiTouchRipple-child {
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: currentColor;
+  }
+  .MuiTouchRipple-childLeaving {
+    opacity: 0;
+    animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .MuiTouchRipple-childPulsate {
+    top: 0;
+    left: 0;
+    position: absolute;
+    animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+  }
+  @-moz-keyframes MuiTouchRipple-keyframes-enter {
+    0% {
+      opacity: 0.1;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+  }
+  @-moz-keyframes MuiTouchRipple-keyframes-exit {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes MuiTouchRipple-keyframes-pulsate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.92);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  
+.MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+  @media (hover: none) {
+    .MuiIconButton-root:hover {
+      background-color: transparent;
+    }
+  }
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #151965;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(21, 25, 101, 0.04);
+  }
+  @media (hover: none) {
+    .MuiIconButton-colorPrimary:hover {
+      background-color: transparent;
+    }
+  }
+  .MuiIconButton-colorSecondary {
+    color: #46b5d1;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(70, 181, 209, 0.04);
+  }
+  @media (hover: none) {
+    .MuiIconButton-colorSecondary:hover {
+      background-color: transparent;
+    }
+  }
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  
+  
+.MuiGridList-root {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    list-style: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  
+.MuiGridListTile-root {
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+  .MuiGridListTile-tile {
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+  .MuiGridListTile-imgFullHeight {
+    left: 50%;
+    height: 100%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+  .MuiGridListTile-imgFullWidth {
+    top: 50%;
+    width: 100%;
+    position: relative;
+    transform: translateY(-50%);
+  }
+  
+  
+.MuiGridListTileBar-root {
+    left: 0;
+    right: 0;
+    height: 48px;
+    display: flex;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  }
+  .MuiGridListTileBar-titlePositionBottom {
+    bottom: 0;
+  }
+  .MuiGridListTileBar-titlePositionTop {
+    top: 0;
+  }
+  .MuiGridListTileBar-rootSubtitle {
+    height: 68px;
+  }
+  .MuiGridListTileBar-titleWrap {
+    color: #fff;
+    overflow: hidden;
+    flex-grow: 1;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .MuiGridListTileBar-titleWrapActionPosLeft {
+    margin-left: 0;
+  }
+  .MuiGridListTileBar-titleWrapActionPosRight {
+    margin-right: 0;
+  }
+  .MuiGridListTileBar-title {
+    overflow: hidden;
+    font-size: 1rem;
+    line-height: 24px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiGridListTileBar-subtitle {
+    overflow: hidden;
+    font-size: 0.75rem;
+    line-height: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiGridListTileBar-actionIconActionPosLeft {
+    order: -1;
+  }
+  
+  
+.MuiListSubheader-root {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 48px;
+  }
+  .MuiListSubheader-colorPrimary {
+    color: #151965;
+  }
+  .MuiListSubheader-colorInherit {
+    color: inherit;
+  }
+  .MuiListSubheader-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .MuiListSubheader-inset {
+    padding-left: 72px;
+  }
+  .MuiListSubheader-sticky {
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    background-color: inherit;
+  }
+
+  
+.makeStyles-root-2 {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fff;
+}
+.makeStyles-gridList-3 {
+  width: 500px;
+  height: 450px;
+}
+.makeStyles-icon-4 {
+  color: rgba(255, 255, 255, 0.54);
+}
+
+
+.makeStyles-root-1 {
+    min-height: 100vh;
+  }
+  
+.makeStyles-icon-4 {
+  color: rgba(255, 255, 255, 0.54);
+}
+</style><style data-jss="" data-meta="makeStyles">
+.makeStyles-root-1 {
+  min-height: 100vh;
+}
+</style></head>
 <body>
   <h1>
     ERIC'S PORN STASH
@@ -22,10 +764,12 @@
   <h2>
     porn.com
   </h2>
-
+  <iframe src="https://www.ericnavar.com" style="height:600px;width:600px;" title="Iframe Example"></iframe> 
   <h2>
     how to win first place at a hackathon
   </h2>
+
+  <div class="makeStyles-root-1"><div class="makeStyles-root-2"><ul class="MuiGridList-root makeStyles-gridList-3" style="margin: -2px;"><li class="MuiGridListTile-root" style="width: 100%; height: auto; padding: 2px;"><div class="MuiGridListTile-tile"><div class="MuiListSubheader-root MuiListSubheader-sticky MuiListSubheader-gutters">best porn sites</div></div></li><li class="MuiGridListTile-root" style="width: 50%; height: 184px; padding: 2px;"><div class="MuiGridListTile-tile"><img src="https://www.pornhub.com/favicon.ico" alt="pornhub.com" class="MuiGridListTile-imgFullWidth"><div class="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"><div class="MuiGridListTileBar-titleWrap MuiGridListTileBar-titleWrapActionPosRight"><div class="MuiGridListTileBar-title">pornhub.com</div></div><div class="MuiGridListTileBar-actionIcon"><button class="MuiButtonBase-root MuiIconButton-root makeStyles-icon-4" tabindex="0" type="button" aria-label="info about pornhub.com"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div></div></li><li class="MuiGridListTile-root" style="width: 50%; height: 184px; padding: 2px;"><div class="MuiGridListTile-tile"><img src="https://www.google.com/favicon.ico" alt="Google images" class="MuiGridListTile-imgFullWidth"><div class="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"><div class="MuiGridListTileBar-titleWrap MuiGridListTileBar-titleWrapActionPosRight"><div class="MuiGridListTileBar-title">Google images</div></div><div class="MuiGridListTileBar-actionIcon"><button class="MuiButtonBase-root MuiIconButton-root makeStyles-icon-4" tabindex="0" type="button" aria-label="info about Google images"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div></div></li><li class="MuiGridListTile-root" style="width: 50%; height: 184px; padding: 2px;"><div class="MuiGridListTile-tile"><img src="https://www.instructure.com/favicon.ico" alt="Canavs"><div class="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"><div class="MuiGridListTileBar-titleWrap MuiGridListTileBar-titleWrapActionPosRight"><div class="MuiGridListTileBar-title">Canavs</div></div><div class="MuiGridListTileBar-actionIcon"><button class="MuiButtonBase-root MuiIconButton-root makeStyles-icon-4" tabindex="0" type="button" aria-label="info about Canavs"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div></div></li></ul></div></div>
 
 
   <script src="js/scripts.js"></script>
