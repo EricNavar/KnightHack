@@ -1,4 +1,4 @@
-<!doctype html>a
+<!doctype html>
 
 <html lang="en">
   <head>
@@ -881,7 +881,85 @@ body {
 .makeStyles-icon-4 {
   color: rgba(255, 255, 255, 0.54);
 }
+body {
+    font-family: "MADE TOMMY";
+    font-size:40px;
+}
 
+p {
+    margin:0;
+}
+
+::selection {
+    background: rgba(70, 181, 209, .8);
+}
+
+.name-container {
+    align-items: center;
+    display: grid;
+    height: 100vh;
+}
+
+.cool-text {
+    margin:0;
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #fff;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.cool-text:hover {
+    color: #FF1177;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    color: #FF1177;
+}
+
+img {
+  position: fixed;
+  z-index:-10;
+}
+
+@-webkit-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+}
+  
+  @-moz-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+}
+  
+  
+@keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    }
+}
+  
+@media (max-width: 650px) {
+    #container {
+      width: 100%;
+    }
+    p {
+      font-size: 3.5em;
+    }
 
 .makeStyles-root-1 {
     min-height: 100vh;
@@ -896,7 +974,17 @@ body {
 }
 </style></head>
 <body>
-  <button type="button" class="btn btn-primary btn-lg">
+  <img src="eric.jpg">
+  <div class="name-container">
+    <p class="cool-text">HOW TO WIN FIRST PLACE AT A HACKATHON</p>
+    <p class="cool-text">HOW TO WIN FIRST PLACE AT A HACKATHON</p>
+    <p class="cool-text">HOW TO WIN FIRST PLACE AT A HACKATHON</p>
+    <p class="cool-text">HOW TO WIN FIRST PLACE AT A HACKATHON</p>
+    <p class="cool-text">HOW TO WIN FIRST PLACE AT A HACKATHON</p>
+    <p class="cool-text">HOW TO WIN FIRST PLACE AT A HACKATHON</p>
+    <p class="cool-text">HOW TO WIN FIRST PLACE AT A HACKATHON</p>
+
+  <button type="button" class="btn btn-primary btn-lg" border="80px">
     <a class="nav-link" id="temp" href="http://www.linkedin.com/in/hector-rizo" id=resume>STEP ONE</a>
 </button
   <script src="js/scripts.js"></script>
