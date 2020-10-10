@@ -1,0 +1,98 @@
+
+@charset "UTF-8";
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Avenir Next, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.6em;
+	color: #000;
+	background-color: #000000;
+	padding: 0 40px;
+}
+
+/* ------------ text styles --------------- */
+p, li, td {
+	letter-spacing: 0.1em;
+	color: 	#FFFFFF;
+}
+h1 {
+    font-family: Futura, Arial, sans-serif;
+	font-size: 50px;
+	padding: 20px 20px 4px 6px;
+	letter-spacing: .3em;
+    color:	#FF0000;
+    text-align: center;
+}
+h2 {
+	font-size: 21px;
+	padding: 1px 6px 10px 6px;
+	letter-spacing: 0.15em;
+    text-align: center;
+    background-color: #FF0000;
+}
+h3 {
+	font-size: 20px;
+	padding: 6px;
+	letter-spacing: 0.2em;
+    background-color: 	#FF0000;
+}
+
+
+/* --------------- list styles --------------- */
+ul li {
+	margin-left: 12px;
+}
+ol {
+	margin-left: 14px;
+}
+
+/* ---------------- table styles ----------------  */
+table {
+	border: solid 	#FF0000 1px;
+}
+td {
+	padding: 8px;
+	border: solid 	#FF0000 1px;
+}
+th {
+	font-weight: bold;
+	background-color: 	#FF0000;
+	text-align: center;
+	padding: 6px;
+	border: solid 	#FF0000 1px;
+}
+
+/* --------------- border styles --------------  */
+hr {
+	border: solid 	#FF0000 1px;
+}
+
+/* -------- DIV STYLES FOR PAGE LAYOUT --------- */
+
+#container {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 40px;
+/*	border: 1px solid #000; */
+	background-color: #000000;
+	overflow: hidden;
+}
+#header{
+	width: 100%;
+}
+#content{
+	width: 605px;
+	float: left;
+	padding-bottom: 3px;
+}
+#footer{
+	width: 100%;
+	clear: both
+}
+
+label{
+	color:	#FFFFFF;
+}
