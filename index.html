@@ -725,7 +725,148 @@ body {
     background-color: inherit;
   }
 
+  :root {
+  --base-color: #8a071d;
+  --lighter-base-color: #d9041a;
+  --face-color: #73989e;
+  --lighter-face-color: #CAE8ED;
+  --border-color: #000000; 
+}
+
+.body {
+  position: relative;
+  margin: 100px 150px;
+  width: 155px;
+  height: 230px;
+  background-color: var(--base-color);
   
+  border: 12px solid var(--border-color);
+  border-radius: 70px 85px 70px 70px;
+}
+
+.body-light-part {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  
+  width: 95%;
+  height: 90%;
+  background-color: var(--lighter-base-color);
+  transform: rotate(-2deg);
+  border-radius: 40% 50% 36% 30%;
+}
+
+.face{ 
+  position: absolute;
+  right: -20px;
+  top: 25px;
+  z-index: 2;
+  
+  background-color: var(--face-color);
+  width: 130px;
+  height: 90px;
+  transform: rotate(-4deg);
+
+  border: 12px solid var(--border-color);
+  border-radius: 70px 90px 110px 110px;
+}
+
+.face-light-part {
+  position: relative;
+  width: 94px;
+  height: 50px;
+  margin: 0px 12px;
+  background-color: var(--lighter-face-color);
+  border-radius: 30% 40% 55% 50%;
+  display: inline-block;
+}
+
+.shimmer {
+  position: relative;
+  margin: 4px 25px;
+  width: 50px;
+  height: 20px;
+  background-color: white;
+  border-radius: 40% 50% 50% 40%;
+}
+
+.backpack{
+  position: absolute;
+  left: 0;
+  top: 65px;
+  width: 50px;
+  height: 150px;
+  transform: translate(-100%);
+  
+  background-color: var(--base-color);
+  border: 12px solid var(--border-color);
+  border-radius: 40% 0 0 50%;
+}
+
+.backpack-light-part {
+  margin-left: 2px;
+  height: 25px;
+  width: calc(100% - 2px);
+  
+  background-color: var(--lighter-base-color);
+  
+  border-radius: 50% 0 0 20%;
+}
+
+.leg-left-under {
+  position: absolute;
+  bottom: 0;
+  left: -12px;
+  
+  width: 70px;
+  height: 60px;
+  
+  background-color: var(--base-color);
+  border-left: 12px solid var(--border-color);
+}
+
+
+.leg-left {
+  position: absolute;
+  bottom: 0;
+  left: -12px;
+  
+  width: 65px;
+  height: 55px;
+  transform: translateY(55px);
+  
+  background-color: var(--base-color);
+  border: 12px solid var(--border-color);
+  border-top: none;
+  border-radius: 0 0 40% 60%;
+}
+
+.leg-right-under {
+  position: absolute;
+  bottom: -4px;
+  left: 70px;
+  
+  width: 65px;
+  height: 32px;
+  
+  background-color: var(--base-color);
+  border-right: 12px solid var(--border-color);
+}
+
+.leg-right {
+  position: absolute;
+  bottom: -50px;
+  left: 70px;
+  
+  width: 65px;
+  height: 50px;
+  
+  background-color: var(--base-color);
+  border: 12px solid var(--border-color);
+  border-top: none;
+  border-radius: 0 0 40% 60%;
+}
 .makeStyles-root-2 {
   display: flex;
   overflow: hidden;
@@ -755,23 +896,9 @@ body {
 }
 </style></head>
 <body>
-  <h1>
-    ERIC'S PORN STASH
-  </h1>
-  <a href='https://www.google.com'>
-    pornhub.com
-  </a>
-  <h2>
-    porn.com
-  </h2>
-  <iframe src="https://www.ericnavar.com" style="height:600px;width:600px;" title="Iframe Example"></iframe> 
-  <h2>
-    how to win first place at a hackathon
-  </h2>
-
-  <div class="makeStyles-root-1"><div class="makeStyles-root-2"><ul class="MuiGridList-root makeStyles-gridList-3" style="margin: -2px;"><li class="MuiGridListTile-root" style="width: 100%; height: auto; padding: 2px;"><div class="MuiGridListTile-tile"><div class="MuiListSubheader-root MuiListSubheader-sticky MuiListSubheader-gutters">best porn sites</div></div></li><li class="MuiGridListTile-root" style="width: 50%; height: 184px; padding: 2px;"><div class="MuiGridListTile-tile"><img src="https://www.pornhub.com/favicon.ico" alt="pornhub.com" class="MuiGridListTile-imgFullWidth"><div class="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"><div class="MuiGridListTileBar-titleWrap MuiGridListTileBar-titleWrapActionPosRight"><div class="MuiGridListTileBar-title">pornhub.com</div></div><div class="MuiGridListTileBar-actionIcon"><button class="MuiButtonBase-root MuiIconButton-root makeStyles-icon-4" tabindex="0" type="button" aria-label="info about pornhub.com"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div></div></li><li class="MuiGridListTile-root" style="width: 50%; height: 184px; padding: 2px;"><div class="MuiGridListTile-tile"><img src="https://www.google.com/favicon.ico" alt="Google images" class="MuiGridListTile-imgFullWidth"><div class="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"><div class="MuiGridListTileBar-titleWrap MuiGridListTileBar-titleWrapActionPosRight"><div class="MuiGridListTileBar-title">Google images</div></div><div class="MuiGridListTileBar-actionIcon"><button class="MuiButtonBase-root MuiIconButton-root makeStyles-icon-4" tabindex="0" type="button" aria-label="info about Google images"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div></div></li><li class="MuiGridListTile-root" style="width: 50%; height: 184px; padding: 2px;"><div class="MuiGridListTile-tile"><img src="https://www.instructure.com/favicon.ico" alt="Canavs"><div class="MuiGridListTileBar-root MuiGridListTileBar-titlePositionBottom"><div class="MuiGridListTileBar-titleWrap MuiGridListTileBar-titleWrapActionPosRight"><div class="MuiGridListTileBar-title">Canavs</div></div><div class="MuiGridListTileBar-actionIcon"><button class="MuiButtonBase-root MuiIconButton-root makeStyles-icon-4" tabindex="0" type="button" aria-label="info about Canavs"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span><span class="MuiTouchRipple-root"></span></button></div></div></div></li></ul></div></div>
-
-
+  <button type="button" class="btn btn-primary btn-lg">
+    <a class="nav-link" id="temp" href="http://www.linkedin.com/in/hector-rizo" id=resume>STEP ONE</a>
+</button
   <script src="js/scripts.js"></script>
 </body>
 </html>
