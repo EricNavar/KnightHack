@@ -6,7 +6,25 @@ table {
     margin: auto;
 }
 
-img {
-    width: 10rem;
+.bois {
+    width: 20rem;
+    height: 7rem;
+}
+
+.brain {
+    width: 40rem;
     height: 20rem;
+}
+
+.done {
+    width: 20rem;
+    height: 15rem;
+}
+
+h3 {
+    font-family: 'Commissioner', sans-serif;
+}
+
+h1 {
+    letter-spacing: 3rem;
 }
