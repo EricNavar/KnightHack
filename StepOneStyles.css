@@ -4,5 +4,9 @@ body {
 
 table {
     margin: auto;
-    border: 1rem solid black;
+}
+
+img {
+    width: 10rem;
+    height: 20rem;
 }
