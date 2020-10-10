@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+    
+        <meta charset="UTF-8">
+        <title>Step 3</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="style-navbar.css" rel="stylesheet" type="text/css">
+        <meta name="description" content="Knight Hacks">
+        <meta name="keywords" content=" Hackathon">
+        <meta name="author" content="Bishoy Barsoum">
+        <script type="text/javascript" src="js/scripts.js"></script>
+        
+
+
+
+    </head>
+    <body>
+        
+        <div id="container">
+            
+            <div id="header">
+    
+                <h1>TESTING AND DEMO</h1>
+                
+                <img src="img/photo.png" width="300" alt="meta">
+                
+                
+            
+            </div> <!-- end header -->
+            
+             <!-- ----------------- Overview --------------------- -->
+            
+            <div id="content">
+                
+               
+               <h3>Steps to Success</h3>
+                <p> If you have already completed steps 1 and 2 then you are almost ready for your EPIC WIN. But before we get to that EPIC win we have to complete
+                 the final step. The final step includes testing out / debugging your code to make sure there are no errors and that you are ready to submit your
+                 submission to be ready for demoing. </p>
+
+                 <ol> 
+                    <li> First be sure to go over all your code to make sure there are no errors or warnings that may cause errors. </li>
+                    <li> Be on the lookout also for syntax errors that can be easily missed.</li>
+                    <li> Make a test file that has code that will test against the code you wrote.</li>
+                    <li> Once you are sure that your code is complete with no errors and is working accordingly you are ready to submit your code for submission</li>
+                    <li> CONGRATULATIONS YOU HAVE WON THE HACKATHON EPIC WIN.</li>
+
+
+
+                 </ol>
+               
+
+                 <h3>Rate This Guy</h3>
+
+                 <!-- start of ratings-->
+                          <title>Star Rating System</title>
+         <meta name="viewport" content="width=device-width">
+         <style>
+             .star{
+               color: yellow;
+               font-size: 2.0rem;
+               padding: 0 1rem; /* space out the stars */
+             }
+             .star::before{
+               content: '\2606';    /* star outline */
+               cursor: pointer;
+             }
+             .star.rated::before{
+               /* the style for a selected star */
+               content: '\2605';  /* filled star */
+             }
+             
+             .stars{
+                 counter-reset: rateme 0;   
+                 font-size: 2.0rem;
+                 font-weight: 900;
+             }
+             .star.rated{
+                 counter-increment: rateme 1;
+             }
+             .stars::after{
+                 content: counter(rateme) '/5';
+                 color:red;
+             }
+         </style>
+         </head>
+         <body>
+         <!-- alternate codepen version https://codepen.io/mad-d/pen/aJMPWr?editors=0010 -->
+        
+            <div class="stars" data-rating="3">
+             <span class="star">&nbsp;</span>
+             <span class="star">&nbsp;</span>
+             <span class="star">&nbsp;</span>
+             <span class="star">&nbsp;</span>
+             <span class="star">&nbsp;</span>
+         
+          </div>
+     
+          <!-- end of ratings -->
+    
+    
+
+<div>
+    
+  <h3>Leave a Comment</h3>
+
+   <form action="" method="POST">
+
+   <label> Name: 
+    <input type="text" name="Name" class="Input" style="width: 225px" required>
+   </label>
+   <br><br>
+   <label> Comment: <br>
+    <textarea name="Comment" class="Input" style="width: 300px" required></textarea>
+   </label>
+   <br><br>
+   <input type="submit" name="Submit" value="Submit Comment" class="Submit">
+
+  </form>
+
+ </body>
+
+</html>
+
+</div>                
+            
+            </div> <!-- end content -->
+            
+            
+            <div id="footer">
+                
+                <hr>
+        
+                <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="blank_"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br> <a href= "mailto:bpb17b@my.fsu.edu">Bishoy Barsoum</a> October 10, 2020</p>
+            
+            </div> <!-- end footer -->
+        
+        </div> <!-- end container -->
+        
+    </body>
+</html>
